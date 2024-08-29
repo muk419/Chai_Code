@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object basics</title>
+</head>
+<body>
+    <script>
+             let key="dataget"
+        let obj1={
+            valueFirst:"mukesh",
+            valueSecond:"yadav",
+            age:23,
+            "test data":true
+        }
+
+    //    obj1[key]="get dta"
+        obj1.admin=true
+    //     console.log(obj1.valueFirst)
+    //     console.log(obj1)
+    //     console.log(delete obj1.age)
+    //     console.log(obj1["test data"])
+ 
+
+    //    let marksmaker= function marksmaker(name,age){
+    //         return {
+    //             name:name,
+    //             age:age
+    //         }
+    //     }
+
+    //     let user=marksmaker("muksh",23);
+    //     console.log(user)
+
+
+        // for(key in obj1){
+        //     console.log(obj1[key])
+        // }
+
+
+        let ouruser={
+            login:true,
+            firstName:"mukesh",
+            secondName:"yadav",
+            isRegister:function(){
+                console.log("yes he is valid person")
+            },
+            notRegister:function(){
+                console.log("yes he not is valid person")
+            },
+            loginCount:1
+
+        }
+
+        for(key in ouruser){
+
+   console.log(ouruser[key])
+
+        if(key=="login")
+{ console.log(ouruser[key]);
+    if(ouruser[key]!==true){
+        ouruser.notRegister()
+    }
+    else{
+      
+        ouruser.isRegister()
+    }
+
+}           
+        }
+    </script>
+
+</body>
+</html>

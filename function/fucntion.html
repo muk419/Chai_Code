@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+   <script>
+
+    const obj={
+        data:'mukesh',
+
+        normal:function(){
+            console.log(this.data)
+        },
+        arrowdata:()=>{
+            obj2={
+                ka:"s"
+            }
+    
+            console.log(this.ka)
+        }
+    }
+  obj.normal()
+  obj.arrowdata()
+
+   </script>
+</body>
+</html>
